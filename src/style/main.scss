@@ -1,0 +1,85 @@
+// $column: 100px;
+$font: Gotham Pro;
+
+.main {
+	&__header {
+		display: flex;
+		width: 1920px;
+		height: 140px;
+		&-logo {
+			width: 80px;
+			height: 88px;
+			margin-top: 23px;
+			margin-left: 60px;
+		}
+		&-catalog {
+			&-adress {
+				width: 220px;
+				display: flex;
+				margin-left: 29.5px;
+				margin-top: 23px;
+				&-text {
+					font-family: $font;
+					font-style: normal;
+					font-weight: 300;
+					font-size: 14px;
+					line-height: 20px;
+					color: #222;
+				}
+				&-down {
+					padding-left: 8px;
+					padding-top: 9px;
+				}
+			}
+			&-button {
+				width: 220px;
+				height: 50px;
+				background-color: #1c69d4;
+				margin-left: 30px;
+				margin-top: 18px;
+				border-radius: 4px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&-text {
+					font-family: $font;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 16px;
+					line-height: 23px;
+					color: #fff;
+					margin-left: 17px;
+				}
+			}
+		}
+		&-menu {
+			display: flex;
+			flex-direction: column;
+			width: 1450px;
+			&-text {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				&-left {
+					&-wrapper {
+						display: flex;
+					}
+					&-item {
+						margin-right: 30px;
+						&_bold {
+							font-weight: bold;
+						}
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+				}
+				&-right {
+					&-wrapper {
+						display: flex;
+					}
+				}
+			}
+		}
+	}
+}
