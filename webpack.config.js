@@ -8,7 +8,8 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'my-first-webpack.bundle.js',
-		clean: true
+		clean: true,
+		assetModuleFilename: 'assets/images/[name][ext]'
 	},
 	module: {
 		rules: [
@@ -23,10 +24,7 @@ module.exports = {
 				]
 			},
 			// изображения
-			{
-				test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-				type: 'assets/resource'
-			}
+			{ test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' }
 		]
 	},
 	mode: 'development',
@@ -41,7 +39,6 @@ module.exports = {
 		port: 8079
 	},
 	plugins: [
-		// ...
 		// применять изменения только при горячей перезагрузке
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
@@ -53,7 +50,7 @@ module.exports = {
 			patterns: [
 				{
 					from: './public/images',
-					to: 'images',
+					to: 'assets/images',
 					globOptions: {
 						ignore: ['*.DS_Store']
 					},

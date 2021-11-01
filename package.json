@@ -17,7 +17,9 @@
 		"url": "https://github.com/AnnaV86/Design_layout/issues"
 	},
 	"homepage": "https://github.com/AnnaV86/Design_layout#readme",
-	"dependencies": {},
+	"dependencies": {
+		"file-loader": "^6.2.0"
+	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.2.0",
 		"@typescript-eslint/parser": "^5.2.0",
@@ -36,6 +38,7 @@
 		"sass": "^1.43.4",
 		"sass-loader": "^12.3.0",
 		"style-loader": "^3.3.1",
+		"url-loader": "^4.1.1",
 		"webpack": "^5.61.0",
 		"webpack-cli": "^4.9.1",
 		"webpack-dev-server": "^4.4.0"

@@ -6,6 +6,7 @@ $font: Gotham Pro;
 		display: flex;
 		width: 1920px;
 		height: 140px;
+		background-color: #fff;
 		&-logo {
 			width: 80px;
 			height: 88px;
@@ -142,6 +143,74 @@ $font: Gotham Pro;
 					font-weight: normal;
 					font-size: 14px;
 					line-height: 20px;
+				}
+			}
+		}
+	}
+	&__free {
+		background-image: url('../images/Rectangle.png');
+		width: 1820px;
+		height: 539px;
+		margin-top: 40px;
+		margin-left: 50px;
+		display: flex;
+		flex-direction: column;
+		&-top {
+			display: flex;
+			justify-content: space-around;
+			height: 267px;
+			&-left {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				&-filter {
+					font-family: $font;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 42px;
+					line-height: 49px;
+					color: #fff;
+					width: 310px;
+					height: 98px;
+				}
+				&-details {
+					display: flex;
+					font-family: $font;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 24px;
+					text-transform: uppercase;
+					color: #222222;
+					&-svg {
+						width: 39px;
+						height: 22px;
+						margin-left: 16px;
+					}
+				}
+			}
+			&-center {
+				width: 297px;
+				height: 464px;
+			}
+			&-right {
+				display: flex;
+				flex-direction: column;
+				&-two-arrow {
+					display: flex;
+					width: 160px;
+					height: 80px;
+				}
+				&-text {
+					width: 455px;
+					height: 72px;
+					font-family: $font;
+					font-style: normal;
+					font-weight: 300;
+					font-size: 75px;
+					line-height: 72px;
+					text-align: right;
+					color: #ffffff;
 				}
 			}
 		}
