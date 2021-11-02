@@ -155,9 +155,14 @@ $font: Gotham Pro;
 		margin-left: 50px;
 		display: flex;
 		flex-direction: column;
+		&-wrapper {
+			width: 1440px;
+			margin-left: 190px;
+			margin-right: 190px;
+		}
 		&-top {
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			height: 267px;
 			&-left {
 				display: flex;
@@ -192,16 +197,33 @@ $font: Gotham Pro;
 			&-center {
 				width: 297px;
 				height: 464px;
+				margin-left: 160px;
 			}
 			&-right {
 				display: flex;
 				flex-direction: column;
-				&-two-arrow {
+				align-items: flex-end;
+				&-arrows {
 					display: flex;
-					width: 160px;
-					height: 80px;
+					&-back {
+						width: 80px;
+						height: 80px;
+						background: rgba(255, 255, 255, 0.2);
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+					&-forward {
+						width: 80px;
+						height: 80px;
+						background: rgba(255, 255, 255, 0.2);
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
 				}
 				&-text {
+					margin-top: 67px;
 					width: 455px;
 					height: 72px;
 					font-family: $font;
@@ -213,6 +235,271 @@ $font: Gotham Pro;
 					color: #ffffff;
 				}
 			}
+		}
+		&-bottom {
+			display: flex;
+			justify-content: space-between;
+			height: 267px;
+			&-left {
+				width: 460px;
+				height: 216px;
+				background: #ffffff;
+				box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04),
+					0px 2px 6px rgba(0, 0, 0, 0.04),
+					0px 0px 1px rgba(0, 0, 0, 0.04);
+				display: flex;
+				&-number {
+					font-family: Gotham Pro;
+					font-style: normal;
+					font-weight: 900;
+					font-size: 36px;
+					line-height: 36px;
+					text-align: center;
+					color: rgba(34, 34, 34, 0.2);
+					width: 55px;
+					margin-left: 16px;
+					margin-top: 32px;
+				}
+				&-info {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					padding: 32px 20px 32px 9px;
+					&-title {
+						font-family: Gotham Pro;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 24px;
+						line-height: 24px;
+						color: #222222;
+					}
+					&-text {
+						font-family: Gotham Pro;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 20px;
+						display: flex;
+						align-items: center;
+						color: #222222;
+					}
+					&-tel {
+						font-family: Gotham Pro;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 24px;
+						line-height: 40px;
+						display: flex;
+						align-items: center;
+						color: #222222;
+					}
+					&-button {
+						width: 360px;
+						height: 52px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border: 2px solid #3ca255;
+						box-sizing: border-box;
+						border-radius: 4px;
+						&-tel {
+							font-family: Gotham Pro;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 16px;
+							line-height: 23px;
+							display: flex;
+							align-items: center;
+							text-align: center;
+							color: #3ca255;
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+			&-center {
+				width: 460px;
+				height: 216px;
+				background: #ffffff;
+				box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04),
+					0px 2px 6px rgba(0, 0, 0, 0.04),
+					0px 0px 1px rgba(0, 0, 0, 0.04);
+				display: flex;
+				&-number {
+					font-family: Gotham Pro;
+					font-style: normal;
+					font-weight: 900;
+					font-size: 36px;
+					line-height: 36px;
+					text-align: center;
+					color: rgba(34, 34, 34, 0.2);
+					width: 55px;
+					margin-left: 16px;
+					margin-top: 32px;
+				}
+				&-info {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					padding: 32px 20px 32px 9px;
+					&-title {
+						font-family: Gotham Pro;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 24px;
+						line-height: 24px;
+						color: #222222;
+					}
+					&-text {
+						font-family: Gotham Pro;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 20px;
+						display: flex;
+						align-items: center;
+						color: #222222;
+					}
+					&-button {
+						border: 2px solid #1c69d4;
+						box-sizing: border-box;
+						border-radius: 4px;
+						width: 360px;
+						height: 52px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						&-text {
+							font-family: Gotham Pro;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 16px;
+							line-height: 23px;
+							display: flex;
+							align-items: center;
+							text-align: center;
+							color: #1c69d4;
+						}
+					}
+				}
+			}
+			&-right {
+				width: 460px;
+				height: 216px;
+				background: #ffffff;
+				box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04),
+					0px 2px 6px rgba(0, 0, 0, 0.04),
+					0px 0px 1px rgba(0, 0, 0, 0.04);
+				display: flex;
+				&-number {
+					font-family: Gotham Pro;
+					font-style: normal;
+					font-weight: 900;
+					font-size: 36px;
+					line-height: 36px;
+					text-align: center;
+					color: rgba(34, 34, 34, 0.2);
+					width: 55px;
+					margin-left: 16px;
+					margin-top: 32px;
+				}
+				&-info {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					padding: 32px 20px 32px 9px;
+					&-title {
+						font-family: Gotham Pro;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 24px;
+						line-height: 24px;
+						color: #222222;
+					}
+					&-text {
+						font-family: Gotham Pro;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 20px;
+						display: flex;
+						align-items: center;
+						color: #222222;
+					}
+					&-button {
+						border: 2px solid #1c69d4;
+						box-sizing: border-box;
+						border-radius: 4px;
+						width: 360px;
+						height: 52px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						&-text {
+							font-family: Gotham Pro;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 16px;
+							line-height: 23px;
+							display: flex;
+							align-items: center;
+							text-align: center;
+							color: #1c69d4;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__picture {
+		width: 1440px;
+		margin-left: 50px;
+		display: flex;
+		justify-content: space-between;
+		margin-left: 240px;
+		margin-right: 240px;
+		&-brushes {
+			background-image: url('../images/Rectangle4.png');
+			width: 460px;
+			height: 356px;
+			position: relative;
+			&-AWM {
+				position: absolute;
+				width: 129px;
+				height: 72px;
+				left: 40px;
+				top: 39px;
+				font-family: Gotham Pro;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				line-height: 36px;
+				color: #ffffff;
+			}
+			&-details {
+				position: absolute;
+				width: 108px;
+				height: 24px;
+				left: 40px;
+				bottom: 42px;
+				font-family: Gotham Pro;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 24px;
+				text-transform: uppercase;
+				color: #ffffff;
+			}
+			&-line {
+				position: absolute;
+				left: 40px;
+				bottom: 38px;
+			}
+		}
+		&-oil {
+			background-image: url('../images/Rectangle\ \(5\).png');
+			width: 950px;
+			height: 356px;
 		}
 	}
 }
