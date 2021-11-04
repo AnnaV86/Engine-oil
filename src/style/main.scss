@@ -500,6 +500,111 @@ $font: Gotham Pro;
 			background-image: url('../images/Rectangle\ \(5\).png');
 			width: 950px;
 			height: 356px;
+			position: relative;
+			&-top {
+				position: absolute;
+				font-family: Gotham Pro;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 24px;
+				color: #ffffff;
+				top: 35px;
+				left: 40px;
+			}
+			&-center {
+				position: absolute;
+				font-family: Gotham Pro;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 30px;
+				line-height: 36px;
+				color: #ffffff;
+				width: 205px;
+				height: 108px;
+				top: 125px;
+				left: 40px;
+			}
+			&-bottom {
+				position: absolute;
+				width: 108px;
+				height: 24px;
+				left: 40px;
+				bottom: 42px;
+				font-family: Gotham Pro;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 24px;
+				text-transform: uppercase;
+				color: #ffffff;
+			}
+			&-line {
+				position: absolute;
+				left: 40px;
+				bottom: 38px;
+			}
+			&-right {
+				position: absolute;
+				font-family: Gotham Pro;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 24px;
+				text-align: center;
+				text-transform: uppercase;
+				font-feature-settings: 'liga' off;
+				color: #ffffff;
+				background-color: #ff4400;
+				width: 164px;
+				height: 50px;
+				right: 40px;
+				top: 40px;
+				box-sizing: border-box;
+				padding-top: 13px;
+			}
 		}
+	}
+	&__footer {
+		width: 1240px;
+		margin-left: 330px;
+		margin-right: 326px;
+		margin-top: 56px;
+		display: flex;
+		justify-content: space-between;
+		font-family: Gotham Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: center;
+		color: #222222;
+	}
+	&__social {
+		margin-left: 891px;
+		margin-right: 891px;
+		display: flex;
+		margin-top: 30px;
+		justify-content: space-around;
+		&-item {
+			width: 30px;
+			height: 30px;
+			background-color: white;
+			border-radius: 24px;
+			box-sizing: border-box;
+			padding-left: 6.75px;
+			padding-top: 6px;
+		}
+	}
+	&__design {
+		width: 153px;
+		font-family: Gotham Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 20px;
+		margin-left: 884px;
+		margin-right: 883px;
+		margin-top: 16px;
 	}
 }
